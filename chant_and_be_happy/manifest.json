@@ -1,0 +1,73 @@
+{
+    "@context": "http://readium.org/webpub/default.jsonld",
+    "metadata": {
+        "@type": "http://schema.org/Audiobook",
+        "title": "Chant and Be Happy: The Power of Mantra Meditation",
+        "author": {
+            "name": "A.C. Bhaktivedanta Swami Prabhupāda",
+            "sortAs": "A.C. Bhaktivedanta Swami Prabhupāda"
+        },
+        "narrator": "KCSoc Warwick",
+        "language": "en",
+        "description": "Just what is the Hare Krsna mantra, the Great Chant for Deliverance? And what are the benefits of chanting it? This book answers those questions and many more you may have about the science of Krsna consciousness. Includes fifty pages of exclusive conversations with George Harrison and John Lennon.",
+        "publisher": "KCSoc Warwick",
+        "modified": "2020-02-08",
+        "published": "2020-02-08"
+    },
+    "links": [
+        {
+            "rel": "self",
+            "href": ".",
+            "type": "application/audiobook+json"
+        },
+        {
+            "rel": "cover",
+            "href": "https://web.archive.org/web/20200208155943if_/https://krishna.ie/wp-content/uploads/2019/12/chant-and-be-happy.jpg",
+            "type": "image/jpeg",
+            "height": 300,
+            "width": 300
+        }
+    ],
+    "readingOrder": [
+        {
+            "href": "book/Chapter_0_Introduction_Read_By_Dhaval_Soneji.mp3",
+            "type": "audio/mpeg"
+        },
+        {
+            "href": "book/Chapter_1_The_Hare_Krsna_Mantra_There_is_nothing_higher__Read_by_Janarth_Duraisingham.mp3",
+            "type": "audio/mpeg"
+        },
+        {
+            "href": "book/Chapter_2__Chanting_for_Liberation_Read_By_Viren.mp3",
+            "type": "audio/mpeg"
+        },
+        {
+            "href": "book/Chapter_3__Srila_Prabhupad_brings_the_Hare_Krishna_Mantra_to_the_West_Read_by_Sanket_Vaidya.mp3",
+            "type": "audio/mpeg"
+        },
+        {
+            "href": "book/Chapter_4_Chanting_for_Higher_Consciousness_A_cultural_History_Read_by_Kanaeshvarr_Devanand.mp3",
+            "type": "audio/mpeg"
+        },
+        {
+            "href": "book/Chapter_5_The_Life_of_Sri_Chaitanya_Read_by_Somesh_Kshatriya.mp3",
+            "type": "audio/mpeg"
+        },
+        {
+            "href": "book/Chapter_6_Haridas_Thakur_the_Prostitute_Read_by_Shubhangi_Bhatt.mp3",
+            "type": "audio/mpeg"
+        },
+        {
+            "href": "book/Chapter_7_The_Science_of_Mantra_Meditation_Read_By_Devi_Baruni_Devanand.mp3",
+            "type": "audio/mpeg"
+        },
+        {
+            "href": "book/Chapter_8_The_Benefits_of_Chanting_Ready_by_Ravi_Kanth_Yadav.mp3",
+            "type": "audio/mpeg"
+        },
+        {
+            "href": "book/Chapter_9_Techniques_for_Chanting_Read_By_Gowri_Satish.mp3",
+            "type": "audio/mpeg"
+        }
+    ]
+}
