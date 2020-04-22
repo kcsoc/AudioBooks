@@ -1,0 +1,81 @@
+{
+    "@context": "http://readium.org/webpub/default.jsonld",
+    "metadata": {
+        "@type": "http://schema.org/Audiobook",
+        "title": "Beyond Birth and Death",
+        "author": {
+            "name": "A.C. Bhaktivedanta Swami Prabhupāda",
+            "sortAs": "A.C. Bhaktivedanta Swami Prabhupāda"
+        },
+        "narrator": "KCSoc Warwick",
+        "language": "en",
+        "description": "Is there life after death? Srila Prabhupada tells how the soul travels from body to body, and how we can end the cycle of birth and death by reaching Lord Sri Krishna's ultimate abode. ",
+        "publisher": "KCSoc Warwick",
+        "modified": "2020-04-22",
+        "published": "2020-04-22"
+    },
+    "links": [
+        {
+            "rel": "self",
+            "href": ".",
+            "type": "application/audiobook+json"
+        },
+        {
+            "rel": "cover",
+            "href": "https://web.archive.org/web/20200422220056/https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1420255594l/24269209.jpg",
+            "type": "image/jpeg",
+            "height": 300,
+            "width": 300
+        }
+    ],
+    "readingOrder": [
+        {
+            "href": "book/Chapter_1_Part_1_We_are_not_these_bodies_Read_by_Amber_Dave.mp3",
+            "type": "audio/mpeg"
+        },
+        {
+            "href": "book/Chapter_1_Part_2_We_are_not_these_bodies_Read_by_Kanaeshvarr_Devanand.mp3",
+            "type": "audio/mpeg"
+        },
+        {
+            "href": "book/Chapter_1_Part_3_We_are_not_these_bodies_Read_by_Janarth_Duraisingham.mp3",
+            "type": "audio/mpeg"
+        },
+        {
+            "href": "book/Chapter_2_Part_1_Elevation_at_Death_Read_by_Devi_Devanand.mp3",
+            "type": "audio/mpeg"
+        },
+        {
+            "href": "book/Chapter_2_Part_2_Elevation_at_Death_Read_by_Viren_Samani.mp3",
+            "type": "audio/mpeg"
+        },
+        {
+            "href": "book/Chapter_2_Part_3_Elevation_at_Death_Read_by_Sanket_Vaidya.mp3",
+            "type": "audio/mpeg"
+        },
+        {
+            "href": "book/Chapter_3_Part_1_Liberation_from_Material_Planets_Read_by_Gowri_Satish.mp3",
+            "type": "audio/mpeg"
+        },
+        {
+            "href": "book/Chapter_3_Part_2_Liberation_from_Material_Planets_Read_by_Sakshi_Mittal.mp3",
+            "type": "audio/mpeg"
+        },
+        {
+            "href": "book/Chapter_4_Part_1_The_Sky_Beyond_the_Universe_Read_by_Shubhangi_Bhatt.mp3",
+            "type": "audio/mpeg"
+        },
+        {
+            "href": "book/Chapter_4_Part_2_The_Sky_Beyond_the_Universe_Read_by_Prasanna_Asokkumar.mp3",
+            "type": "audio/mpeg"
+        },
+        {
+            "href": "book/Chapter_5_Part_1_Associating_with_Kṛṣṇa_Read_by_Nirthan_Vamdevan.mp3",
+            "type": "audio/mpeg"
+        },
+        {
+            "href": "book/Chapter_5_Part_2_Associating_with_Kṛṣṇa_Read_by_Dhaval_Soneji.mp3",
+            "type": "audio/mpeg"
+        }
+    ]
+}
