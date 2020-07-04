@@ -98,7 +98,8 @@ String.prototype.replaceAll = function (stringToFind, stringToReplace) {
           if (link.rel) {
             if (link.rel == "cover") {
               console.log("Found cover: " + link.href);
-              cover.src = new URL(link.href, url).href;
+              // cover.src = new URL(link.href, url).href; // doesnt work coz default manifest is not a url
+              cover.src = new URL(link.href).href;
             }
           }
         }, this);
