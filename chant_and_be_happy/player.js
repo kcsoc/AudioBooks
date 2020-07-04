@@ -12,7 +12,7 @@ String.prototype.replaceAll = function (stringToFind, stringToReplace) {
 (function () {
 
 
-  var DEFAULT_MANIFEST = "https://kcsoc.soneji.xyz/audiobooks/chant_and_be_happy/manifest.json";
+  var DEFAULT_MANIFEST = "manifest.json";
   var current_url_params = new URLSearchParams(location.href);
 
   if (current_url_params.has("href")) {
