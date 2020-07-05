@@ -17,7 +17,11 @@ String.prototype.replaceAll = function (stringToFind, stringToReplace) {
     console.log("Found manifest in params");
     var manifest_url = current_url_params.get("href");
   } else {
-    var manifest_url = DEFAULT_MANIFEST;
+    current = window.location.href;
+    current = current.replace("/index.html", "");
+    current = current.replace("index.html", "");
+    var manifest_url = current + "/" + DEFAULT_MANIFEST;
+    console.log(manifest_url);
   }
 
   if (current_url_params.has("track")) {
@@ -115,8 +119,7 @@ String.prototype.replaceAll = function (stringToFind, stringToReplace) {
       })
       .then(function (readingOrder) {
         //Set start track
-        // var start_url = new URL(readingOrder[0].href, url).href;
-        var start_url = new URL(readingOrder[0].href).href;
+        var start_url = new URL(readingOrder[0].href, url).href;
 
         if (track_url) {
           updateTrack(url, track_url);
@@ -139,7 +142,7 @@ String.prototype.replaceAll = function (stringToFind, stringToReplace) {
       })
       .then(function (readingOrder) {
         var current_index = readingOrder.findIndex(function (element) {
-          var element_url = new URL(element.href); //, url);
+          var element_url = new URL(element.href, url);
           return element_url.href == current_src;
         });
         temp = readingOrder[current_index].href;
@@ -147,8 +150,10 @@ String.prototype.replaceAll = function (stringToFind, stringToReplace) {
         temp = temp.replaceAll("_", " ");
         ting.innerHTML = temp;
         if (current_index >= 0) {
-          // audio_source.src = new URL(readingOrder[current_index].href, url).href;
-          audio_source.src = new URL(readingOrder[current_index].href).href;
+          audio_source.src = new URL(
+            readingOrder[current_index].href,
+            url
+          ).href;
           localStorage.setItem(url + "#track", audio_source.src);
           audio_source.type = readingOrder[current_index].type;
           audio.load();
@@ -157,8 +162,10 @@ String.prototype.replaceAll = function (stringToFind, stringToReplace) {
             console.log(
               "Previous track is: " + readingOrder[current_index - 1].href
             );
-            // previous.href = new URL(readingOrder[current_index - 1].href, url).href;
-            previous.href = new URL(readingOrder[current_index - 1].href).href;
+            previous.href = new URL(
+              readingOrder[current_index - 1].href,
+              url
+            ).href;
           } else {
             previous.removeAttribute("href");
           }
@@ -167,8 +174,7 @@ String.prototype.replaceAll = function (stringToFind, stringToReplace) {
             console.log(
               "Next track is: " + readingOrder[current_index + 1].href
             );
-            // next.href = new URL(readingOrder[current_index + 1].href, url).href;
-            next.href = new URL(readingOrder[current_index + 1].href).href;
+            next.href = new URL(readingOrder[current_index + 1].href, url).href;
           } else {
             next.removeAttribute("href");
           }
