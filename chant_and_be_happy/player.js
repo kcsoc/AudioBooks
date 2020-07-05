@@ -167,8 +167,8 @@ String.prototype.replaceAll = function (stringToFind, stringToReplace) {
             console.log(
               "Next track is: " + readingOrder[current_index + 1].href
             );
+            // next.href = new URL(readingOrder[current_index + 1].href, url).href;
             next.href = new URL(readingOrder[current_index + 1].href).href;
-            next.href = new URL(readingOrder[current_index + 1].href, url).href;
           } else {
             next.removeAttribute("href");
           }
